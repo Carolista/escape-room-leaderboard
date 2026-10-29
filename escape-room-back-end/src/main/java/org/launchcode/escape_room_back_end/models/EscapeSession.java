@@ -1,15 +1,15 @@
 package org.launchcode.escape_room_back_end.models;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import org.springframework.format.annotation.DateTimeFormat;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.Duration;
-import java.time.LocalDateTime;
+import java.time.OffsetDateTime;
 import java.util.Objects;
 
 @Entity
@@ -26,12 +26,12 @@ public class EscapeSession {
     private String room;
 
     @NotNull(message = "Start time is required.")
-    @DateTimeFormat(pattern = "yyyy-MM-DD'T'HH:mm:ss.SSSX")
-    private LocalDateTime startTime;
+    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSX")
+    private OffsetDateTime startTime;
 
     @NotNull(message = "End time is required.")
-    @DateTimeFormat(pattern = "yyyy-MM-DD'T'HH:mm:ss.SSSX")
-    private LocalDateTime endTime;
+    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSX")
+    private OffsetDateTime endTime;
 
     private double minutesToSolve;
     private boolean successful;
@@ -39,7 +39,7 @@ public class EscapeSession {
     public EscapeSession() {
     }
 
-    public EscapeSession(String teamName, String room, LocalDateTime startTime, LocalDateTime endTime) {
+    public EscapeSession(String teamName, String room, OffsetDateTime startTime, OffsetDateTime endTime) {
         this.teamName = teamName;
         this.room = room;
         this.startTime = startTime;
@@ -68,11 +68,11 @@ public class EscapeSession {
         this.room = room;
     }
 
-    public LocalDateTime getStartTime() {
+    public OffsetDateTime getStartTime() {
         return startTime;
     }
 
-    public LocalDateTime getEndTime() {
+    public OffsetDateTime getEndTime() {
         return endTime;
     }
 

@@ -4,7 +4,9 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
@@ -43,6 +45,20 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
                 .collect(Collectors.toList());
         errorResponse.put("statusCode", HttpStatus.BAD_REQUEST.value());
         errorResponse.put("message", errors);
+        errorResponse.put("timestamp", new Date());
+        errorResponse.put("errorCode", "VALIDATION_FAILED");
+        return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
+    }
+
+    @Override
+    protected ResponseEntity<Object> handleHttpMessageNotReadable(
+            HttpMessageNotReadableException ex,
+            HttpHeaders headers,
+            HttpStatusCode status,
+            WebRequest request) {
+        Map<String, Object> errorResponse = new HashMap<>();
+        errorResponse.put("statusCode", HttpStatus.BAD_REQUEST.value());
+        errorResponse.put("message", "Invalid date format. Please use yyyy-MM-dd'T'HH:mm:ss.SSSX");
         errorResponse.put("timestamp", new Date());
         errorResponse.put("errorCode", "VALIDATION_FAILED");
         return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
