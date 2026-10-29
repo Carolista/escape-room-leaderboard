@@ -44,4 +44,16 @@ public class EscapeSessionController {
         }
         return new ResponseEntity<>(session, HttpStatus.OK);
     }
+
+    // DELETE localhost:8080/sessions/42 (for example)
+    @DeleteMapping(value = "/{id}")
+    public ResponseEntity<?> deleteEscapeSessionById(@PathVariable int id) throws NoResourceFoundException {
+        EscapeSession session = escapeSessionRepository.findById(id).orElse(null);
+        if (session == null) {
+            String path = "/session/" + id;
+            throw new NoResourceFoundException(HttpMethod.GET, path, path);
+        }
+        escapeSessionRepository.deleteById(id);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
 }
