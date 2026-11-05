@@ -50,7 +50,7 @@
 	font-family: var(--font-display);
 	font-size: 3.2rem;
 	letter-spacing: 0.08em;
-	color: #fff;
+	color: var(--text-bright);
     margin-top: 0.5rem;
 }
 
@@ -81,7 +81,7 @@
 }
 
 .nav-link:hover {
-	color: #fff;
+	color: var(--text-bright);
 	border-bottom-color: var(--steel);
 }
 
@@ -162,7 +162,7 @@
 }
 
 .button-outline:hover {
-	color: #fff;
+	color: var(--text-bright);
 	background-color: var(--blue-dark);
 	border-color: var(--blue-light);
 }
@@ -404,7 +404,7 @@
 
 .leaderboard .team {
 	font-weight: 500;
-	color: #fff;
+	color: var(--text-bright);
 }
 
 .badge {

@@ -15,6 +15,7 @@
 	--steel: #3a3d43;
 
 	/* Text */
+    --text-bright: #f8f8ff;
 	--text: #d9dade;
 	--text-muted: #8f929a;
 
@@ -42,14 +43,13 @@ body {
 	font-family: var(--font-body);
 	line-height: 1.6;
 	color: var(--text);
-	/* 45° charcoal-on-charcoal pinstripe: 6px bars with 24px gaps (4x), like cell bars */
 	background-color: var(--charcoal);
 	background-image: repeating-linear-gradient(
 		45deg,
 		var(--charcoal) 0,
-		var(--charcoal) 24px,
-		var(--charcoal-stripe) 24px,
-		var(--charcoal-stripe) 30px
+		var(--charcoal) 20px,
+		var(--charcoal-stripe) 20px,
+		var(--charcoal-stripe) 24px
 	);
 }
 
@@ -67,7 +67,7 @@ h3 {
 	letter-spacing: 0.06em;
 	line-height: 1.1;
 	margin: 0 0 0.5em;
-	color: #fff;
+	color: var(--text-bright);
 }
 
 h1 {
