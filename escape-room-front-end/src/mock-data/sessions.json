@@ -1,0 +1,226 @@
+[
+	{
+		"teamName": "The Missing Semicolons",
+		"roomId": 1,
+		"id": 1,
+		"minutesToSolve": 55.733,
+		"successful": true
+	},
+	{
+		"teamName": "Brute Force",
+		"roomId": 2,
+		"id": 2,
+		"minutesToSolve": 58.15,
+		"successful": true
+	},
+	{
+		"teamName": "The Try-Catchers",
+		"roomId": 3,
+		"id": 3,
+		"minutesToSolve": 53.3,
+		"successful": true
+	},
+	{
+		"teamName": "Ctrl+Alt+Defeat",
+		"roomId": 4,
+		"id": 4,
+		"minutesToSolve": 49.417,
+		"successful": true
+	},
+	{
+		"teamName": "404 Escape Not Found",
+		"roomId": 5,
+		"id": 5,
+		"minutesToSolve": 62,
+		"successful": false
+	},
+	{
+		"teamName": "Git Us Outta Here",
+		"roomId": 6,
+		"id": 6,
+		"minutesToSolve": 46.867,
+		"successful": true
+	},
+	{
+		"teamName": "Timestamp Testers",
+		"roomId": 7,
+		"id": 7,
+		"minutesToSolve": 60.867,
+		"successful": false
+	},
+	{
+		"teamName": "Stack Overflowed",
+		"roomId": 1,
+		"id": 8,
+		"minutesToSolve": 48.5,
+		"successful": true
+	},
+	{
+		"teamName": "Null Pointers",
+		"roomId": 2,
+		"id": 9,
+		"minutesToSolve": 63.25,
+		"successful": false
+	},
+	{
+		"teamName": "Infinite Loops",
+		"roomId": 3,
+		"id": 10,
+		"minutesToSolve": 52.2,
+		"successful": true
+	},
+	{
+		"teamName": "Root Access Granted",
+		"roomId": 4,
+		"id": 11,
+		"minutesToSolve": 45.167,
+		"successful": true
+	},
+	{
+		"teamName": "Legacy Bandits",
+		"roomId": 5,
+		"id": 12,
+		"minutesToSolve": 65.75,
+		"successful": false
+	},
+	{
+		"teamName": "Merge Conflicts Anonymous",
+		"roomId": 6,
+		"id": 13,
+		"minutesToSolve": 50,
+		"successful": true
+	},
+	{
+		"teamName": "Chronos Coders",
+		"roomId": 7,
+		"id": 14,
+		"minutesToSolve": 55.333,
+		"successful": true
+	},
+	{
+		"teamName": "The Lazy Loaders",
+		"roomId": 1,
+		"id": 15,
+		"minutesToSolve": 54.2,
+		"successful": true
+	},
+	{
+		"teamName": "Coffee Driven Development",
+		"roomId": 2,
+		"id": 16,
+		"minutesToSolve": 65,
+		"successful": false
+	},
+	{
+		"teamName": "Syntax Error Savants",
+		"roomId": 3,
+		"id": 17,
+		"minutesToSolve": 48.75,
+		"successful": true
+	},
+	{
+		"teamName": "Hotfix Heroes",
+		"roomId": 4,
+		"id": 18,
+		"minutesToSolve": 42.25,
+		"successful": true
+	},
+	{
+		"teamName": "Spaghetti Code Squad",
+		"roomId": 5,
+		"id": 19,
+		"minutesToSolve": 65,
+		"successful": false
+	},
+	{
+		"teamName": "Rebase Rebels",
+		"roomId": 6,
+		"id": 20,
+		"minutesToSolve": 43.5,
+		"successful": true
+	},
+	{
+		"teamName": "Temporal Hackers",
+		"roomId": 7,
+		"id": 21,
+		"minutesToSolve": 65.167,
+		"successful": false
+	},
+	{
+		"teamName": "The Slackers",
+		"roomId": 1,
+		"id": 22,
+		"minutesToSolve": 58,
+		"successful": true
+	},
+	{
+		"teamName": "Calendar Invaders",
+		"roomId": 2,
+		"id": 23,
+		"minutesToSolve": 50.75,
+		"successful": true
+	},
+	{
+		"teamName": "Catch Blocks",
+		"roomId": 3,
+		"id": 24,
+		"minutesToSolve": 45.333,
+		"successful": true
+	},
+	{
+		"teamName": "Rollback Rangers",
+		"roomId": 4,
+		"id": 25,
+		"minutesToSolve": 62.167,
+		"successful": false
+	},
+	{
+		"teamName": "COBOL Survivors",
+		"roomId": 5,
+		"id": 26,
+		"minutesToSolve": 51.5,
+		"successful": true
+	},
+	{
+		"teamName": "Git Force Push",
+		"roomId": 6,
+		"id": 27,
+		"minutesToSolve": 41.2,
+		"successful": true
+	},
+	{
+		"teamName": "Paradox Programmers",
+		"roomId": 7,
+		"id": 28,
+		"minutesToSolve": 50,
+		"successful": true
+	},
+	{
+		"teamName": "The Free Riders",
+		"roomId": 1,
+		"id": 29,
+		"minutesToSolve": 65.25,
+		"successful": false
+	},
+	{
+		"teamName": "Out of Office",
+		"roomId": 2,
+		"id": 30,
+		"minutesToSolve": 44.5,
+		"successful": true
+	},
+	{
+		"teamName": "Segmentation Faults",
+		"roomId": 3,
+		"id": 31,
+		"minutesToSolve": 63.75,
+		"successful": false
+	},
+	{
+		"teamName": "YOLO Deployers",
+		"roomId": 4,
+		"id": 32,
+		"minutesToSolve": 45,
+		"successful": true
+	}
+]
