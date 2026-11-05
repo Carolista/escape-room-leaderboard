@@ -79,7 +79,8 @@ function Leaderboard({ rooms, roomsLoading, roomsError }) {
 		<section>
 			<h1>Leaderboard</h1>
 			<p className="page-intro">
-				The fastest teams to break out. (Everyone else is still in there.)
+				The fastest teams to break out. (Everyone else is still in
+				there.)
 			</p>
 
 			<div className="filters">
@@ -138,14 +139,16 @@ function Leaderboard({ rooms, roomsLoading, roomsError }) {
 							{visibleSessions.map(session => (
 								<tr key={session.id}>
 									<td className="rank">
-										{session.rank ?? '–'}
+										{session.rank ?? '—'}
 									</td>
 									<td className="team">{session.teamName}</td>
-									<td>{getRoomName(session.roomId)}</td>
+									<td className="room">
+										{getRoomName(session.roomId)}
+									</td>
 									<td className="numeric">
 										{formatDuration(session.minutesToSolve)}
 									</td>
-									<td>
+									<td className="result">
 										<span
 											className={
 												session.successful
