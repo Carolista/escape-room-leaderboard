@@ -1,6 +1,7 @@
 package org.launchcode.escape_room_back_end.models;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
@@ -22,15 +23,17 @@ public class EscapeSession {
     @NotBlank(message = "Team name is required.")
     private String teamName;
 
-    @NotBlank(message = "Room is required.")
-    private String room;
+    @NotNull(message = "Room ID is required")
+    private int roomId;
 
     @NotNull(message = "Start time is required.")
     @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSX")
+    @JsonIgnore // omits from outgoing JSON only
     private OffsetDateTime startTime;
 
     @NotNull(message = "End time is required.")
     @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSX")
+    @JsonIgnore // omits from outgoing JSON only
     private OffsetDateTime endTime;
 
     private double minutesToSolve;
@@ -39,9 +42,9 @@ public class EscapeSession {
     public EscapeSession() {
     }
 
-    public EscapeSession(String teamName, String room, OffsetDateTime startTime, OffsetDateTime endTime) {
+    public EscapeSession(String teamName, int roomId, OffsetDateTime startTime, OffsetDateTime endTime) {
         this.teamName = teamName;
-        this.room = room;
+        this.roomId = roomId;
         this.startTime = startTime;
         this.endTime = endTime;
         this.minutesToSolve = calculateSolveTime();
@@ -60,12 +63,12 @@ public class EscapeSession {
         this.teamName = teamName;
     }
 
-    public String getRoom() {
-        return room;
+    public int getRoomId() {
+        return roomId;
     }
 
-    public void setRoom(String room) {
-        this.room = room;
+    public void setRoomId(int roomId) {
+        this.roomId = roomId;
     }
 
     public OffsetDateTime getStartTime() {
