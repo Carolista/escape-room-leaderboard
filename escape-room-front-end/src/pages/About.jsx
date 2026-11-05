@@ -12,8 +12,8 @@ function About() {
 					</p>
 					<p>
 						Every room is built around the everyday disasters of
-						software teams, from the merge conflict that won’t
-						resolve to the meeting that won’t end. Gather your team,
+						software teams, from the merge conflict that won't
+						resolve to the meeting that won't end. Gather your team,
 						split up the clues, and find the way out before time
 						runs out.
 					</p>
