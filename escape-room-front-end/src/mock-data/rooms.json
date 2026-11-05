@@ -2,8 +2,8 @@
 	{
 		"id": 1,
 		"name": "Escape from the Group Project",
-		"desc_1": "The deadline is in sixty minutes and somebody has to carry the team. Piece together who did what before the final submission locks you out.",
-		"desc_2": "Navigate through endless passive-aggressive Slack messages and scrambled slide decks to assemble the final presentation before your grade drops to zero.",
+		"desc1": "The deadline is in sixty minutes and somebody has to carry the team. Piece together who did what before the final submission locks you out.",
+		"desc2": "Navigate through endless passive-aggressive Slack messages and scrambled slide decks to assemble the final presentation before your grade drops to zero.",
 		"tagline": "Five teammates. One deliverable. Zero contributions.",
 		"image": "/images/room-group-project.png",
 		"alt": "Group project members looking bored and listless in a library where they are supposed to be finishing their project"
@@ -11,8 +11,8 @@
 	{
 		"id": 2,
 		"name": "The Endless Meeting",
-		"desc_1": "Trapped in a calendar invite that keeps getting extended, you must crack the cipher hidden within redundant status updates to find the exit door.",
-		"desc_2": "Fight off sleep and corporate buzzwords as you race against the clock to escape a sync that could have literally been an async Slack chat.",
+		"desc1": "Trapped in a calendar invite that keeps getting extended, you must crack the cipher hidden within redundant status updates to find the exit door.",
+		"desc2": "Fight off sleep and corporate buzzwords as you race against the clock to escape a sync that could have literally been an async Slack chat.",
 		"tagline": "This could have been an email.",
 		"image": "/images/room-endless-meeting.png",
 		"alt": "A bland conference room where boredom reigns and dreams go to die"
@@ -20,8 +20,8 @@
 	{
 		"id": 3,
 		"name": "The Unhandled Exception",
-		"desc_1": "A critical system crash has locked you inside the core server rack. Trace the corrupted stack trace to patch the vulnerability before the system melts down.",
-		"desc_2": "Navigate a labyrinth of cascading null pointer exceptions and endless error logs to debug your way back to safety.",
+		"desc1": "A critical system crash has locked you inside the core server rack. Trace the corrupted stack trace to patch the vulnerability before the system melts down.",
+		"desc2": "Navigate a labyrinth of cascading null pointer exceptions and endless error logs to debug your way back to safety.",
 		"tagline": "Something threw. Nothing caught it.",
 		"image": "/images/room-unhandled-exception.png",
 		"alt": "Stack traces and massive binders of documentation stand between these folks and freedom from this chaotic room"
@@ -29,8 +29,8 @@
 	{
 		"id": 4,
 		"name": "Deploy to Production on Friday",
-		"desc_1": "You pushed code to main right before clocking out for the weekend. Now you have to reverse-engineer a flawless deployment script while alarms blare all around you.",
-		"desc_2": "Tackle frantic pipeline failures and broken CI/CD builds before Monday morning standup exposes your fatal mistake.",
+		"desc1": "You pushed code to main right before clocking out for the weekend. Now you have to reverse-engineer a flawless deployment script while alarms blare all around you.",
+		"desc2": "Tackle frantic pipeline failures and broken CI/CD builds before Monday morning standup exposes your fatal mistake.",
 		"tagline": "What could possibly go wrong?",
 		"image": "/images/room-friday-deploy-to-prod.png",
 		"alt": "Teammates try desperately to roll back the deployment before the entire system crashes"
@@ -38,8 +38,8 @@
 	{
 		"id": 5,
 		"name": "The Legacy Codebase",
-		"desc_1": "Venturing deep into undocumented software written back in 1988, you must decipher cryptic functions and ancient spaghetti code to find the master key.",
-		"desc_2": "Explore dusty directories and unravel layer upon layer of technical debt to uncover the original developer's escape hatch.",
+		"desc1": "Venturing deep into undocumented software written back in 1988, you must decipher cryptic functions and ancient spaghetti code to find the master key.",
+		"desc2": "Explore dusty directories and unravel layer upon layer of technical debt to uncover the original developer's escape hatch.",
 		"tagline": "Archaeology meets software engineering.",
 		"image": "/images/room-legacy-codebase.png",
 		"alt": "A dimly-lit basement server room showing years of poor cable management and probably a FORTRAN 77 manual or two"
@@ -47,8 +47,8 @@
 	{
 		"id": 6,
 		"name": "Merge Conflict",
-		"desc_1": "You and your rival are trapped on opposite branches of a split repository. Resolve the conflicting code lines to merge your paths back together.",
-		"desc_2": "Survive a barrage of competing git pulls, detached heads, and force-push disasters to clear the staging area.",
+		"desc1": "You and your rival are trapped on opposite branches of a split repository. Resolve the conflicting code lines to merge your paths back together.",
+		"desc2": "Survive a barrage of competing git pulls, detached heads, and force-push disasters to clear the staging area.",
 		"tagline": "Two branches. One truth.",
 		"image": "/images/room-merge-conflict.png",
 		"alt": "A room split between two git branch diagrams with more than a few conflicts to be resolved"
@@ -56,8 +56,8 @@
 	{
 		"id": 7,
 		"name": "Time Warp",
-		"desc_1": "A catastrophic timezone mismatch has thrown you completely out of sync with the universe. Reset the atomic clocks before you're stuck in an infinite loop forever.",
-		"desc_2": "Jump across broken epoch timestamps and daylight saving time anomalies to restore the chronological order of reality.",
+		"desc1": "A catastrophic timezone mismatch has thrown you completely out of sync with the universe. Reset the atomic clocks before you're stuck in an infinite loop forever.",
+		"desc2": "Jump across broken epoch timestamps and daylight saving time anomalies to restore the chronological order of reality.",
 		"tagline": "Bend time or get left behind.",
 		"image": "/images/room-time-warp.png",
 		"alt": "Teammates try to restore order to the temporal nexus by unraveling disastrous mismatches due to daylight saving time"

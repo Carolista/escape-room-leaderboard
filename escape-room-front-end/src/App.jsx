@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router';
 import './App.css';
 import Layout from './components/Layout';
@@ -9,42 +8,29 @@ import Leaderboard from './pages/Leaderboard';
 import NotFound from './pages/NotFound';
 
 function App() {
-	const [rooms, setRooms] = useState([]);
-	const [roomsLoading, setRoomsLoading] = useState(true);
-	const [roomsError, setRoomsError] = useState(null);
-
-	useEffect(() => {
-		async function loadRooms() {
-			try {
-				const response = await fetch('http://localhost:8080/rooms');
-				if (!response.ok) {
-					throw new Error(`Server responded with ${response.status}`);
-				}
-				const data = await response.json();
-				setRooms(data);
-				setRoomsLoading(false);
-			} catch (err) {
-				setRoomsError(err.message);
-				setRoomsLoading(false);
-			}
-		}
-
-		loadRooms();
-	}, []);
-
-	const roomProps = { rooms, roomsLoading, roomsError };
+    
+	// TODO 9: Rooms are needed by Home, Rooms, AND Leaderboard, and right now
+	//  each of those pages imports its own copy of the mock data. Once you've
+	//  finished the sessions work above (TODO 6-8), come back here and decide
+	//  where the one shared copy of the rooms data should live. Why is App
+	//  the right spot? (Think about where those three pages sit in the tree.)
+	//  Fetch rooms from the back end here, and track everything you tracked for
+	//  sessions: the data itself, whether it's still loading, and whether it
+	//  failed. Then remove the mock-data imports from the three pages (see
+	//  TODO 11, 13, and 15).
 
 	return (
 		<BrowserRouter>
 			<Routes>
 				<Route element={<Layout />}>
-					<Route index element={<Home {...roomProps} />} />
+					{/* TODO 10: Pass what the pages need (the rooms, plus their
+					loading and error status) down to Home, Rooms, and
+					Leaderboard. Think about how you can send several related
+					values without repeating yourself three times. */}
+					<Route index element={<Home />} />
 					<Route path="about" element={<About />} />
-					<Route path="rooms" element={<Rooms {...roomProps} />} />
-					<Route
-						path="leaderboard"
-						element={<Leaderboard {...roomProps} />}
-					/>
+					<Route path="rooms" element={<Rooms />} />
+					<Route path="leaderboard" element={<Leaderboard />} />
 					<Route path="*" element={<NotFound />} />
 				</Route>
 			</Routes>

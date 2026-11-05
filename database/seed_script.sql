@@ -1,3 +1,12 @@
+-- TODO 4: Make sure TODO 3 is done first (the tables must already exist, so
+--  keep in mind this script only inserts rows; it doesn't create tables).
+--  Open this file in MySQL Workbench and run the whole script. Why does the
+--  first line matter? Then verify the data got loaded: SELECT from both tables
+--  and check the row counts. (7 rooms, 109 sessions.)
+--  Finally, with the back end running, visit http://localhost:8080/rooms and
+--  http://localhost:8080/sessions in your browser. You should see JSON. Compare
+--  the property names in that JSON to the ones in src/mock-data in the front
+--  end; you'll be relying on them being the same.
 USE escape_room;
 
 INSERT INTO room (id, name, desc_1, desc_2, tagline, image, alt)
